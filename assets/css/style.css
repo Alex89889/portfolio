@@ -1,0 +1,424 @@
+*{margin:0;padding:0}
+.wrapper{
+	max-width:1440px;
+	margin:0 auto;
+}
+
+.header-portfolio{
+	display:flex;
+	width:100%;
+	height:20vw;
+	justify-content:center;
+	align-items:center;
+	background-color:#fbceb1;
+}
+
+
+.main-portfolio{
+	display:flex;
+	flex-direction:column;
+	background-color:#fbceb1;
+}
+.person-image{
+	width:15vw;
+	height:15vw;
+	border-radius:50%;
+}
+
+.personal-information{
+	margin-left:3vw;
+	text-align:center;
+}
+
+.person-name{
+	font-size:3vw;
+	line-height:4vw;
+	text-transform:uppercase;
+	font-family:"Playfair Display",Arial,cursive;
+}
+
+.header__list{
+	display:inline;
+	margin-right:2vw;
+	list-style:none;
+	font-size:1.4vw;
+	line-height:3vw;
+	text-transform:uppercase;
+	font-family:"Playfair Display",Arial,sans-serif;
+}
+
+.header__href{
+	text-decoration:none;
+	color:#000000;
+}
+
+.header__href:hover{
+	color:darkkhaki;
+}
+.education{
+	width:100%;
+	margin:0 auto;
+	margin-top:3vw;
+	margin-bottom:2vw;
+}
+.collapsible{
+	display:flex;
+	align-items:center;
+	width:90%;
+	height:5vw;
+	margin:0 auto;
+	border:1px solid rgba(0,0,0,0.125);
+	background-color:rgba(0,0,0,0.034);
+	cursor:pointer;outline:none;
+}
+
+.collapsible:hover{
+	background-color:rgba(0,0,0,0.024);
+}
+
+.active{
+	background-color:rgba(0,0,0,0.024);
+}
+.collapsible__education-text{
+	margin-left:6.8%;
+	font-size:2vw;
+	line-height:2vw;
+	font-family:"Playfair Display",Arial,sans-serif;
+	color:black;
+}
+
+.collapsible__education-img{
+	width:1.5vw;
+	margin-left:2vw;
+}
+
+.education-list{
+	margin-left:12%;
+	font-size:1.4vw;
+	line-height:3.5vw;
+	font-family:"Playfair Display",Arial,sans-serif;
+	color:#393939;
+}
+
+.content{
+	display: none;
+	max-height:0;
+	transition:max-height 0.2s ease-out;
+}
+
+.projects{
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.projects-header{
+	display:flex;
+	align-items:center;
+	height:5vw;
+	margin:0 auto;
+	border:1px solid rgba(0,0,0,0.125);
+	background-color:rgba(0,0,0,0.034);
+}
+
+.project-header__text{
+	margin-left:7%;
+	font-size:2vw;
+	line-height:2vw;
+	font-family:"Playfair Display",Arial,sans-serif;
+	color:black;
+}
+
+.slide-project{
+	display:flex;
+	margin:0 auto;
+}
+
+.slide__description{
+	margin-top:3vw;
+	margin-left:3vw;
+}
+
+.slide__header{
+	font-size:1.5vw;
+	line-height:3vw;
+	color:#393939;
+}
+
+.slide__list{
+	margin-left:3vw;
+	font-size:1.5vw;
+	line-height:3vw;
+	font-family:"Playfair Display",Arial,sans-serif;
+	color:#393939;
+}
+
+.slide__img{
+	width:100%;
+	height:100%;
+	margin-top:3vw;
+}
+
+.slide__description__button{
+	display:flex;
+	align-items:center;
+	width:20vw;
+	height:7vw;
+	margin-top:14vw;
+	margin-left:13vw;
+}
+
+.slide__description__button-text{
+	width:15vw;
+	font-size:1.4vw;
+	line-height:1.8vw;
+	font-family:"Playfair Display",Arial,sans-serif;
+	color:#393939;
+}
+
+.slide__description__button-img{
+	width:3vw;
+}
+
+.slide__description__button-img__down{
+	display:none;
+}
+
+.description__mobile{
+	display:none;
+	font-family:"Playfair Display",Arial,sans-serif;
+}
+
+.description__mobile-img{
+	width:4vw;
+	margin-left:2vw;
+}
+
+.carousel{
+	width:100%;
+	position: relative;
+}
+
+.carousel-container{
+	margin: 20px;
+}
+
+
+.carousel__item{
+	display:none;
+	position:relative;
+	margin:0 auto;
+	animation:0.5s ease-in-out;
+}
+
+.active-slide,.next-slide{
+	display:block;
+}
+
+.next-slide{
+	position:absolute;
+	top:35.2vw;
+	width:100%;
+	height:1060px;
+}
+
+.control{
+	position:relative;
+	
+}
+
+.control.left{
+	position: absolute;
+	top: 0%;
+	right:auto;
+	bottom:0;
+	width:4vw;
+	cursor:pointer;
+}
+
+.control.right{
+	position: absolute;
+	right:1px;
+	left:auto;
+	top: 0%;
+	bottom:0;
+	width:4vw;
+	cursor:pointer;
+}
+
+.arrow{
+	display:inline-block;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+.to-left{
+	animation-name:left;
+}
+.to-right{
+	animation-name:right;
+	animation-direction:reverse;
+}
+.from-left{
+	animation-name:left;
+	animation-direction:reverse;
+}
+
+.from-right{
+	animation-name:right;
+}
+@keyframes left{from{left:0}to{left:-100%}}@keyframes right{from{left:100%}to{left:0}}
+.button{
+	display:flex;
+}
+.button__mobile,.button__desktop,.button__back,.theyalow-button__mobile,.theyalow-button__desktop{
+	display:block;
+	position:fixed;
+	width:80px;
+	height:40px;
+	border:0;
+	background:rgba(0,0,0,0.3);
+	font-family:"Playfair Display",Arial,cursive;
+	color:white;
+	cursor:pointer;
+}
+.theyalow-button__mobile{
+	top:70%;
+	left:5%;
+}
+.theyalow-button__desktop{
+	top:77%;
+	left:5%;
+}
+.button__mobile{
+	top:70%;
+	left:5%;
+}
+.button__desktop{
+	top:77%;
+	left:5%;
+}
+.button__back{
+	top:7%;
+	left:5%;
+}
+.main{
+	width:100%;
+	background-color:rgba(234,255,44,0.136);
+}
+.iframe-container{
+	display:none;
+	width:38vw;
+	height:1000px;
+}
+@media screen and (max-width: 375px){
+	.header-portfolio{
+		height:40vw;
+	}
+	.person-image{
+		width:20vw;
+		height:20vw;
+		margin-left: 5vw;
+	}
+	.personal-information{
+		margin-left:1vw;
+	}
+	.person-name{
+		font-size:5.8vw;
+		line-height:10vw;
+	}
+	.header__list{
+		font-size:3.8vw;
+		line-height:6vw;
+	}
+	.collapsible{
+		height:11vw;
+	}
+	.collapsible__education-text{
+		font-size:4vw;
+		line-height:6vw;
+	}
+	.collapsible__education-img{
+		width:3vw;
+	}
+	.education-list{
+		font-size:4vw;
+		line-height:6vw;
+	}
+	.projects-header{
+		height:10vw;
+	}
+	.project-header__text{
+		font-size:4vw;
+		line-height:6vw;
+	}
+	.slide-project{
+		flex-direction:column;
+		align-items:center;
+	}
+	.slide__description{
+		overflow:hidden;
+		max-height:0;
+		transition:max-height 0.2s ease-out;
+	}
+	.slide__header{
+		font-size:5vw;
+		line-height:8vw;
+	}
+	.slide__list{
+		margin-left:5vw;
+		font-size:4vw;
+		line-height:8vw;
+	}
+	.slide__img{
+		width:87vw;
+		height:127vw;
+	}
+	
+	.slide__description__button{
+		width:40vw;
+		height:12vw;
+		margin-top:5vw;
+	}
+	.slide__description__button-text{
+		width:40vw;
+		font-size:3.4vw;
+		line-height:3.8vw;
+	}
+	.slide__description__button-img{
+		display:none;
+	}
+	.slide__description__button-img__down{
+		display:inline;
+		width:4vw;
+		margin-left:2vw;
+	}
+	.description__mobile{
+		display:inline;
+		width:90vw;
+		height:20vw;
+		margin:3vw auto;
+		border:0;
+		border-bottom:2px solid rgba(0,0,0,0.034);
+		background-color:#fbceb1;
+		cursor:pointer;
+		font-size:4.5vw;
+		line-height:9vw;
+		font-family:"Playfair Display",Arial,sans-serif;
+		color:black;
+		text-align:center;
+	}
+	.carousel{
+		height:170vw;
+	}
+	.carousel__item{
+		height:885px;
+	}
+	.next-slide{
+		top:66.5vw;
+	}
+	.control{
+		display:none;
+	}
+	
+}

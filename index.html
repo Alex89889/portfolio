@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+     <link rel='stylesheet' href='assets/css/style.css'>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-portfolio">
+            <img class="person-image" src="assets/img/photo.jpg" alt="person-image">
+            <div class="personal-information">
+                <h1 class="person-name">Aliaksandra Mikhalchanka</h1>
+                <ul class="social-links">
+                    <li class="header__list social-links__github"><a href="https://github.com/Alex89889" class="header__href github__href" target="_blank">GitHub</a></li>
+                    <li class="header__list social-links__telegram"><a href="https://t.me/alex89889" class="header__href telegram__href" target="_blank">Telegram</a></li>
+                    <li class="header__list social-links__skype"><a href="tel:+375336892292" class="header__href skype__href" target="_blank">Skype</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main-portfolio">
+            <section class="education">
+              <button type="button" class="collapsible ">
+                <p class="collapsible__education-text">Education</p> 
+                <img class="collapsible__education-img" src="assets/img/arrow-down.svg" alt="arrow down">
+              </button>
+              <div class="content">
+                  <ul class="education-list">
+                      <li class="education-list__university"><b>2014 - 2018</b> Belarusian State University of Informatics and Radioelectronics.</li>
+                      <li class="education-list__rs-now"><b>September 2019 - present</b> Rolling-Scopes-School</li>
+                  </ul>
+              </div>
+            </section>
+            <section class="projects">
+              <div class="projects-header">
+                <p class="project-header__text">Projects</p>
+              </div>
+              <div class="carousel">
+                <div class="carousel-container">
+                  <div class="carousel__item active-slide">
+                    <section class="slide-project container__project1">
+          
+                      <button type="button" class="description__mobile"><b>Repair Design Project</b> <br> Description<img class="description__mobile-img" src="assets/img/arrow-down.svg" alt="down"> </button>
+
+                      <article class="slide__description">
+                        <h6 class="slide__header project1__header">Repair Design Project</h6>
+                        <ul class="slide__list">
+                          <li>Responsive</li>
+                          <li>Browser Support: Google Chrome, Mozilla Firefox, Microsoft Edge</li>
+                          <li>Using Flexbox and Grid</li>
+                          <li>Interactive navbar, button and link</li>
+                          <li>Desktop, tablet, mobile</li>
+                        </ul>
+                        <div class="slide__description__button">
+                          <p class="slide__description__button-text">Tap on image to see the project</p>
+                          <img class="slide__description__button-img" src="assets/img/arrow-right.svg" alt="tap">
+                          <img class="slide__description__button-img__down" src="assets/img/arrow-down.svg" alt="tap">
+                        </div>
+                      </article>
+                      <section class="project__img">
+                        <a class="project__href" href="repair.html" >
+                          <img class="slide__img img__repair-design" src="assets/img/repair-design.jpg" alt="repair-design">
+                        </a>
+                      </section>
+                  </section>
+                  </div>
+                  <div class="carousel__item">
+                    <section class="slide-project container__project2">
+                      <button type="button" class="description__mobile"><b>Theyalow</b> <br> Description <img class="description__mobile-img" src="assets/img/arrow-down.svg" alt="down"> </button>
+                      <article class="slide__description">
+                        <h6 class="slide__header project2__header">Theyalow</h6>
+                        <ul class="slide__list">
+                          <li>Responsive</li>
+                          <li>Browser Support: Google Chrome, Mozilla Firefox</li>
+                          <li>Using Flexbox and Grid</li>
+                          <li>Interactive navbar, button and link</li>
+                          <li>Interective slider</li>
+                        </ul>
+                        <div class="slide__description__button">
+                          <p class="slide__description__button-text">Tap on image to see the project</p>
+                          <img class="slide__description__button-img" src="assets/img/arrow-right.svg" alt="tap">
+                          <img class="slide__description__button-img__down" src="assets/img/arrow-down.svg" alt="tap">
+                        </div>
+                      </article>
+                      <section class="project__img">
+                        <a class="project__href" href="theyalow.html">
+                        <img class="slide__img img__theyalow" src="assets/img/theyalow.jpg" alt="theyallow">
+                      </a> 
+                      
+                      </section>
+                      </section>
+                  </div>
+                </div>
+                
+                <div class="control left">
+                    <img class="arrow left" src="assets/img/slider-prev.png" alt="previous">
+                </div> 
+                <div class="control right">
+                    <img class="arrow right" src="assets/img/slider-next.png" alt="next">
+                 </div>  
+              </div>
+            </section>
+        </main>
+    </div>
+	<script type="text/javascript" src="assets/js/slider.js"></script>
+	<script type="text/javascript" src="assets/js/collaps.js"></script>
+   
+   
+   
+</body>
+</html>
